@@ -20,6 +20,11 @@ label {
 	cursor: pointer;
 }
 
+h1,h2,h3 {
+	margin: 0;
+	padding: 0;
+}
+
 #left-container {
 	height: 100%;
 	width: 400px;
@@ -83,6 +88,25 @@ label {
 	background-color: #EC407A;
 	font-weight: bold;
 	color: #FFF;
+	transition: all 0.5s;
+}
+
+#about-activator:checked ~ * .name .morum {
+	background-color: #8BC34A;
+}
+
+#contact-activator:checked ~ * .name .morum {
+	background-color: #03A9F4;
+}
+
+#about-activator:checked ~ * #home {
+	width: 0;
+}
+
+#contact-activator:checked ~ * #home,
+#contact-activator:checked ~ * #about {
+	width: 0;
+	padding: 0;
 }
 
 .name .santos {
@@ -145,7 +169,7 @@ label {
 	width: 50px;
 	position: absolute;
 	overflow: hidden;
-	transition: width 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 .card {
@@ -302,4 +326,105 @@ label {
 #home-content .detail:hover .card i {
 	color: #FFF;
 	text-shadow: 5px 5px 0 rgba(0,0,0,0.3);
+}
+
+#main-content {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+}
+
+#welcome {
+	font-size: 80px;
+	font-family: 'Times New Roman', serif;
+	font-weight: bold;
+	color: #999;
+	position: absolute;
+	top: 20%;
+	right: 0;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+#welcome:before {
+	content: "Seja bem-vindo";
+	position: absolute;
+	color: #DDD;
+	top: 50%;
+	left: 50%;
+	transform: translate(calc(-50% - 3px), calc(-50% - 3px));
+	width: 100%;
+	display: block;
+}
+
+#welcome:after {
+	content: "Seja bem-vindo";
+	position: absolute;
+	color: #222;
+	top: 50%;
+	left: 50%;
+	transform: translate(calc(-50% - 6px), calc(-50% - 6px));
+	width: 100%;
+	display: block;
+	text-shadow: none;
+}
+
+#to {
+	font-size: 50px;
+	font-family: 'Satisfy', cursive;
+	font-weight: bold;
+	color: #555;
+	position: absolute;
+	top: calc(20% + 100px);
+	right: 50%;
+	background-color: #FFF;
+	width: 150px;
+	display: block;
+	height: 50px;
+	transform: translateX(50%);
+	line-height: 50px;
+	box-shadow: 5px 5px 0 rgba(0,0,0,0.3);
+}
+
+#portfolio {
+	font-size: 70px;
+	font-family: 'Bevan', cursive;
+	font-weight: bold;
+	color: #222;
+	position: absolute;
+	top: calc(20% + 170px);
+	right: 0;
+	width: 100%;
+	text-transform: uppercase;
+	letter-spacing: 15px;
+}
+
+#of {
+	font-size: 40px;
+	font-family: 'Varela Round', cursive;
+	font-weight: bold;
+	color: #555;
+	position: absolute;
+	top: calc(20% + 270px);
+	right: 0;
+	width: 100%;
+}
+
+#guilherme {
+	font-size: 40px;
+	font-family: 'Unica One', sans-serif;
+	font-weight: bold;
+	color: #333;
+	position: absolute;
+	top: calc(20% + 330px);
+	right: 50%;
+	width: 800px;
+	letter-spacing: 15px;
+	text-transform: uppercase;
+	transform: translateX(50%);
+	border-top: 5px solid #333;
+	border-bottom: 5px solid #333;
 }
