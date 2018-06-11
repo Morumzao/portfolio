@@ -103,13 +103,27 @@
 	<div id="contact-content" class="page-content">
 		<form class="absolute-center">
 			<h1>Entre em contato</h1>
-			<input type="text" name="name" placeholder="nome">
-			<input type="text" name="email" placeholder="e-mail">
-			<input type="text" name="phone" placeholder="telefone">
-			<textarea maxlength="500"></textarea>
+			<div class="input-container">
+				<input type="text" name="name" id="name" required>
+				<label for="name">Nome:</label>
+			</div>
+			<div class="input-container">
+				<input type="text" name="email" id="email" required>
+				<label for="email">E-Mail:</label>
+			</div>
+			<div class="input-container">
+				<input type="text" name="phone" id="phone" required>
+				<label for="phone">Telefone:</label>
+			</div>
+			<div class="input-container">
+				<textarea maxlength="500" id="message" required></textarea>
+				<label for="message">Mensagem:</label>
+			</div>
 			<input type="submit">
 			<input type="reset">
 		</form>
+		<div class="cloud">
+		</div>
 	</div>
 </div>
 <script> </script>
