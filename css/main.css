@@ -10,6 +10,7 @@ body {
 	height: 100%;
 	font-family: 'Helvetica', sans-serif;
 	color: #FFF;
+	min-width: 1390px;
 }
 
 input[type="radio"] {
@@ -36,7 +37,7 @@ h1,h2,h3 {
 #right-container {
 	height: 100%;
 	width: calc(100% - 400px);
-	min-width: 500px;
+	min-width: 990px;
 	background-color: #DDD;
 	float: right;
 	position: relative;
