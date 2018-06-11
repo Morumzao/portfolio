@@ -56,40 +56,96 @@
 </div>
 <div id="right-container">
 	<div class="slice" id="home">
+		<div class="card absolute-center" id="home-content">
+			<h1>Quem sou eu?</h1>
+			<div class="content">
+				<div class="detail">
+					<div class="card">
+						<i class="fa fa-pencil-alt absolute-center"></i>
+					</div>
+					<div class="description">
+						<h3>Item</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at felis elit.</p>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="card">
+						<i class="fa fa-mouse-pointer absolute-center"></i>
+					</div>
+					<div class="description">
+						<h3>Item</h3>
+						<p>"Fusce sit amet sodales felis. Sed mi leo, rhoncus ac augue nec, consectetur sollicitudin turpis."</p>
+					</div>
+				</div>
+				<div class="detail">
+					<div class="card">
+						<i class="fa fa-quote-right absolute-center"></i>
+					</div>
+					<div class="description">
+						<h3>Item</h3>
+						<p>Duis ut lectus gravida, placerat urna at, luctus lorem. Praesent in felis non ex suscipit scelerisque.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="slice" id="about">
+		<div id="about-content" class="page-content">
+			<div class="main-content">
+				<div class="work-item">
+					<h3>
+						Item Title <span class="left-dot">10/01/1997</span>
+					</h3>
+					<img src="http://via.placeholder.com/960x540">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante felis, scelerisque ut odio id, rhoncus euismod velit. Aenean nec nisi eu tortor mollis porta id vel ex. Integer purus odio, condimentum a efficitur ac, porttitor ut elit. Suspendisse potenti. Duis in diam lobortis, tempor arcu in, congue risus. Aliquam consequat erat vitae mi posuere rhoncus. Curabitur tempor elit tincidunt tempus aliquet. Duis commodo nibh eget aliquet ullamcorper. Maecenas tristique sollicitudin convallis.
+					</p>
+				</div>
+				<div class="work-item">
+					<h3>
+						Item Title 2 <span class="left-dot">10/11/1964</span>
+					</h3>
+					<img src="http://via.placeholder.com/960x540">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante felis, scelerisque ut odio id, rhoncus euismod velit. Aenean nec nisi eu tortor mollis porta id vel ex. Integer purus odio, condimentum a efficitur ac, porttitor ut elit. Suspendisse potenti. Duis in diam lobortis, tempor arcu in, congue risus. Aliquam consequat erat vitae mi posuere rhoncus. Curabitur tempor elit tincidunt tempus aliquet. Duis commodo nibh eget aliquet ullamcorper. Maecenas tristique sollicitudin convallis.
+					</p>
+				</div>
+				<div class="work-item">
+					<h3>
+						Item Title 3 <span class="left-dot">12/06/1991</span>
+					</h3>
+					<img src="http://via.placeholder.com/960x540">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ante felis, scelerisque ut odio id, rhoncus euismod velit. Aenean nec nisi eu tortor mollis porta id vel ex. Integer purus odio, condimentum a efficitur ac, porttitor ut elit. Suspendisse potenti. Duis in diam lobortis, tempor arcu in, congue risus. Aliquam consequat erat vitae mi posuere rhoncus. Curabitur tempor elit tincidunt tempus aliquet. Duis commodo nibh eget aliquet ullamcorper. Maecenas tristique sollicitudin convallis.
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>
 	<div class="slice" id="contact">
-	</div>
-	<div class="card absolute-center" id="home-content">
-		<h1>Quem sou eu?</h1>
-		<div class="content">
-			<div class="detail">
-				<div class="card">
-					<i class="fa fa-pencil-alt absolute-center"></i>
+		<div id="contact-content" class="page-content">
+			<form class="absolute-center">
+				<h1>Entre em contato</h1>
+				<div class="input-container">
+					<input type="text" name="name" id="name" required>
+					<label for="name">Nome:</label>
 				</div>
-				<div class="description">
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at felis elit.</p>
+				<div class="input-container">
+					<input type="text" name="email" id="email" required>
+					<label for="email">E-Mail:</label>
 				</div>
-			</div>
-			<div class="detail">
-				<div class="card">
-					<i class="fa fa-mouse-pointer absolute-center"></i>
+				<div class="input-container">
+					<input type="text" name="phone" id="phone" required>
+					<label for="phone">Telefone:</label>
 				</div>
-				<div class="description">
-					<h3>Item</h3>
-					<p>"Fusce sit amet sodales felis. Sed mi leo, rhoncus ac augue nec, consectetur sollicitudin turpis."</p>
+				<div class="input-container">
+					<textarea maxlength="500" id="message" required></textarea>
+					<label for="message">Mensagem:</label>
 				</div>
-			</div>
-			<div class="detail">
-				<div class="card">
-					<i class="fa fa-quote-right absolute-center"></i>
-				</div>
-				<div class="description">
-					<h3>Item</h3>
-					<p>Duis ut lectus gravida, placerat urna at, luctus lorem. Praesent in felis non ex suscipit scelerisque.</p>
-				</div>
+				<input type="submit">
+				<input type="reset">
+			</form>
+			<div class="cloud">
 			</div>
 		</div>
 	</div>
@@ -99,31 +155,6 @@
 		<h1 id="portfolio">portfólio</h1>
 		<h1 id="of">de</h1>
 		<h1 id="guilherme">Guilherme Morum Santos</h1>
-	</div>
-	<div id="contact-content" class="page-content">
-		<form class="absolute-center">
-			<h1>Entre em contato</h1>
-			<div class="input-container">
-				<input type="text" name="name" id="name" required>
-				<label for="name">Nome:</label>
-			</div>
-			<div class="input-container">
-				<input type="text" name="email" id="email" required>
-				<label for="email">E-Mail:</label>
-			</div>
-			<div class="input-container">
-				<input type="text" name="phone" id="phone" required>
-				<label for="phone">Telefone:</label>
-			</div>
-			<div class="input-container">
-				<textarea maxlength="500" id="message" required></textarea>
-				<label for="message">Mensagem:</label>
-			</div>
-			<input type="submit">
-			<input type="reset">
-		</form>
-		<div class="cloud">
-		</div>
 	</div>
 </div>
 <script> </script>
