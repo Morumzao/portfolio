@@ -1,1 +1,1 @@
-<?php header('Location: /index.html'); ?>
+<?php header('Location: /index.html'); //https://gmorum-portfolio.herokuapp.com/index.html ?>
